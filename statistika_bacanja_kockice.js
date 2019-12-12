@@ -21,7 +21,5 @@ while (x < 7) {
     document.getElementById("kocke" + redni).name = redni;
     document.getElementById("kockice" + redni).innerHTML = redni +': ' +kocka+'%';
     document.getElementById("kocak").innerHTML = 'Broj bacanja: ' +numTim+' puta';
-    
- 
     x++
 }
