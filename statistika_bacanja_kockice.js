@@ -24,4 +24,4 @@ while (x < 7) {
     document.getElementById("kocak").innerHTML = 'Broj bacanja: ' +numTim+' puta';
     x++
 }
-// m 52
+// m 58
