@@ -1,4 +1,16 @@
-let y = prompt('Unesi broj bacanja');
+// let y = prompt('Unesi broj bacanja');
+
+// Process form if use enter key. put script in head.    
+document.onkeyup = enter;    
+function enter(e) {if (e.which == 13) 
+    // submitForm();
+    let y = document.getElementById("num");
+    }
+
+// uses keyup not down as better practice imo    
+// submitForm() is user function that posts the form
+
+// let y = document.getElementById("num");
 let numTim = 0;
 let totalDice = [];
 while (numTim < y) {
@@ -6,7 +18,6 @@ while (numTim < y) {
     totalDice.push(currentDice);
     numTim++
 }
-
 // let x = 1;
 // while (x < 7) {
 //     console.log(`${x+0}: ` + totalDice.filter(item => item === x).length / y*600 + '%');
@@ -28,5 +39,3 @@ while (x < 7) {
 // g4 59
 
 // g4 24
-
-//m 27
