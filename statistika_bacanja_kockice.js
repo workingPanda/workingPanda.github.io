@@ -6,6 +6,7 @@ while (numTim < y) {
     totalDice.push(currentDice);
     numTim++
 }
+
 // let x = 1;
 // while (x < 7) {
 //     console.log(`${x+0}: ` + totalDice.filter(item => item === x).length / y*600 + '%');
