@@ -2,11 +2,11 @@
 
 // Process form if use enter key. put script in head.    
 document.onkeyup = enter;    
-function enter(e) {if (e.which == 13) 
+function enter(e) {if (e.which == 13) {
     // submitForm();
     let y = document.getElementById("num").value;
     }
-
+}
 // uses keyup not down as better practice imo    
 // submitForm() is user function that posts the form
 
