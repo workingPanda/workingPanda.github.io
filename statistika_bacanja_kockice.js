@@ -4,7 +4,7 @@
 document.onkeyup = enter;    
 function enter(e) {if (e.which == 13) 
     // submitForm();
-    let y = document.getElementById("num");
+    let y = document.getElementById("num").value;
     }
 
 // uses keyup not down as better practice imo    
