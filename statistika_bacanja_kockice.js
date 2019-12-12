@@ -1,4 +1,4 @@
-let y = prompt(Unesi broj bacanja);
+let y = prompt('Unesi broj bacanja');
 let numTim = 0;
 let totalDice = [];
 while (numTim < y) {
