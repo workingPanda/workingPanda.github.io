@@ -41,6 +41,7 @@
         <div class=""></div>
       </header>
 
+      <!-- UGOVARATELJ NOVI DIO -->
       <ul>
 
         <li id="foli1" class="notranslate first section      ">
@@ -147,6 +148,10 @@
 
         </li>
 
+
+        <!-- OSIGURANIK NOVI DIO -->
+
+
         <li id="foli17" class="notranslate section      ">
           <section>
             <h3 id="title17">
@@ -155,11 +160,119 @@
           </section>
         </li>
 
+        <!-- Ime i prezime -->
+        <li id="foli2" class="complex notranslate      ">
+
+          <label class="desc" id="title2">
+            Ime i prezime
+          </label>
+
+          <div>
+            <span class="left ime">
+              <input id="Field2" name="Field2" type="text" class="field text fn" value="" tabindex="0" placeholder="" />
+              <label for="Field2">Ime</label>
+            </span>
+
+            <span class="right prezime">
+              <input id="Field3" name="Field3" type="text" class="field text ln" value="" tabindex="0" placeholder="" />
+              <label for="Field3">Prezime</label>
+            </span>
+          </div>
+
+        </li>
+
+        <!-- adresa -->
+        <li id="foli4" class="complex notranslate      ">
+
+          <label class="desc" id="title4">
+            Adresa
+          </label>
+
+          <div>
+            <span class="full addr1">
+              <input id="Field4" name="Field4" type="text" class="field text addr" value="" tabindex="0"
+                placeholder="" />
+              <label for="Field4">Ulica i kućni broj</label>
+            </span>
+
+            <span class="left city">
+              <input id="Field6" name="Field6" type="text" class="field text addr" value="" tabindex="0"
+                placeholder="" />
+              <label for="Field6">Mjesto</label>
+            </span>
+
+            <span class="right zip">
+              <input id="Field8" name="Field8" type="text" class="field text addr" value="" maxlength="15" tabindex="0"
+                placeholder="" />
+              <label for="Field8">Poštanski broj</label>
+            </span>
+          </div>
+
+          <!-- MBG -->
+        <li id="foli4" class="complex notranslate      ">
+
+          <div>
+            <span class="left MBG">
+              <label class="desc " id="title14" for="Field14">
+                Matični broj građana
+              </label>
+
+              <div>
+                <input id="Field14" name="Field14" type="text" class="field text nospin small" value="" maxlength="13"
+                  tabindex="0" onkeyup="validateRange(14, 'digit');" placeholder="" />
+                <label>Unesite <var id="rangeMinMsg14">13</var> znamenki&nbsp;&nbsp;&nbsp; <em class="currently">Uneseno
+                    <var id="rangeUsedMsg14">0</var> znamenki</em></label>
+              </div>
+            </span>
+
+            <!-- OIB -->
+            <span class="right OIB">
+              <label class="desc " id="title15" for="Field15">
+                Osobni identifikacijski broj
+              </label>
+
+              <div>
+                <input id="Field15" name="Field15" type="text" class="field text nospin small" value="" maxlength="11"
+                  tabindex="0" onkeyup="validateRange(15, 'digit');" placeholder="" />
+                <label>Unesite <var id="rangeMinMsg15">11</var> znamenki
+                  &nbsp;&nbsp;&nbsp; <em class="currently">Uneseno <var id="rangeUsedMsg15">0</var>
+                    znamenki</em></label>
+              </div>
+            </span>
+          </div>
+
+        </li>
+
+        <!-- fon -->
+        <li id="foli10" class="notranslate      ">
+
+          <label class="desc" id="title10" for="Field10">
+            Telefonski broj
+          </label>
+          <div>
+            <input id="Field10" class="field text medium" name="Field10" tabindex="0" placeholder="" type="tel"
+              maxlength="255" value="" />
+          </div>
+
+        </li>
+
+
+
+        <!-- RADIO BUTTONS -->
+
+        <li id="foli17" class="notranslate section      ">
+          <section>
+            <h3 id="title17">
+              RADIO BUTTONS
+            </h3>
+          </section>
+        </li>
+
         <li id="foli19" class="     ">
           <fieldset>
             <![if !IE | (gte IE 8)]>
             <legend id="title19" class="desc notranslate">
-              Are you planning on canceling any existing life insurance?
+              ?
             </legend>
             <![endif]>
             <!--[if lt IE 8]>
@@ -173,7 +286,7 @@ Are you planning on canceling any existing life insurance?
                 <input id="Field19_0" name="Field19" type="radio" class="field radio" value="Yes" tabindex="0"
                   onchange="" />
                 <label class="choice" for="Field19_0">
-                  <span class="choice__text notranslate">Yes</span>
+                  <span class="choice__text notranslate">Da</span>
                   <span class="choice__qty">
                   </span>
                 </label>
@@ -182,7 +295,7 @@ Are you planning on canceling any existing life insurance?
                 <input id="Field19_1" name="Field19" type="radio" class="field radio" value="No" tabindex="0"
                   onchange="" />
                 <label class="choice" for="Field19_1">
-                  <span class="choice__text notranslate">No</span>
+                  <span class="choice__text notranslate">Ne</span>
                   <span class="choice__qty">
                   </span>
                 </label>
@@ -194,21 +307,17 @@ Are you planning on canceling any existing life insurance?
           <fieldset>
             <![if !IE | (gte IE 8)]>
             <legend id="title20" class="desc notranslate">
-              Do you have group life insurance through work?
+              2?
             </legend>
             <![endif]>
-            <!--[if lt IE 8]>
-<label id="title20" class="desc">
-Do you have group life insurance through work?
-</label>
-<![endif]-->
+
             <div>
               <input id="radioDefault_20" name="Field20" type="hidden" value="" />
               <span>
                 <input id="Field20_0" name="Field20" type="radio" class="field radio" value="Yes" tabindex="0"
                   onchange="" />
                 <label class="choice" for="Field20_0">
-                  <span class="choice__text notranslate">Yes</span>
+                  <span class="choice__text notranslate">Da</span>
                   <span class="choice__qty">
                   </span>
                 </label>
@@ -217,7 +326,7 @@ Do you have group life insurance through work?
                 <input id="Field20_1" name="Field20" type="radio" class="field radio" value="No" tabindex="0"
                   onchange="" />
                 <label class="choice" for="Field20_1">
-                  <span class="choice__text notranslate">No</span>
+                  <span class="choice__text notranslate">Ne</span>
                   <span class="choice__qty">
                   </span>
                 </label>
@@ -246,12 +355,11 @@ Do you have group life insurance through work?
         <li class="buttons ">
           <div>
 
-            <input id="saveForm" name="saveForm" class="btTxt submit" type="submit" value="Submit" />
-            <a href="https://master.wufoo.com/forms/m7p0x3/def/field1=marijan000.wufoo.com/forms/upitnik-za-osiguranje-imovine-privatni-rizici/"
+            <input id="saveForm" name="saveForm" class="btTxt submit" type="submit" value="Predaj zahtjev" />
+            <!-- <a href="https://master.wufoo.com/forms/m7p0x3/def/field1=marijan000.wufoo.com/forms/upitnik-za-osiguranje-imovine-privatni-rizici/"
               target="_blank"
               style="font-size:85% !important;visibility:visible !important;display:inline !important;
-background:none !important;border:none !important;color:blue !important; text-indent:0 !important;text-decoration:underline !important;position:static;margin:0 !important;padding:0 !important;overflow:none !important; ">Report
-              Abuse</a>
+background:none !important;border:none !important;color:blue !important; text-indent:0 !important;text-decoration:underline !important;position:static;margin:0 !important;padding:0 !important;overflow:none !important; ">Report Abuse</a> -->
             <!-- width:auto !important;height:auto !important -->
           </div>
         </li>
