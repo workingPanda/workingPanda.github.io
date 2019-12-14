@@ -9,19 +9,22 @@
 
   <!-- Meta Tags -->
   <meta charset="utf-8">
-  <meta name="generator" content="Wufoo">
-  <meta name="robots" content="index, follow">
+  <!-- <meta name="generator" content="Wufoo">
+  <meta name="robots" content="index, follow"> -->
 
   <!-- CSS -->
-  <link href="css/structure.css" rel="stylesheet">
+  <!-- <link href="css/theme.css" rel="stylesheet"> -->
+  <!-- <link href="css/structure.css" rel="stylesheet"> -->
   <link href="css/form.css" rel="stylesheet">
+  <link rel="stylesheet" media="screen and (min-width: 800px)" href="css/structure.css">
+  <link rel="stylesheet" media="screen and (max-width: 799px)" href="css/structure500.css">
+  <link rel="stylesheet" media="screen and (max-width: 499px)" href="css/form499.css">
+  <link rel="stylesheet" media="screen and (max-width: 499px)" href="css/structure499.css">
+
 
   <!-- JavaScript -->
   <script src="scripts/js.js"></script>
 
-  <!--[if lt IE 10]>
-<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
 </head>
 
 <body id="public">
@@ -41,8 +44,11 @@
         <div class=""></div>
       </header>
 
-      <!-- UGOVARATELJ NOVI DIO -->
+
       <ul>
+
+        <!-- ======================================= -->
+        <!-- UGOVARATELJ NOVI DIO -->
 
         <li id="foli1" class="notranslate first section      ">
           <section>
@@ -60,47 +66,49 @@
           </label>
 
           <div>
-            <span class="left ime">
-              <input id="Field2" name="Field2" type="text" class="field text fn" value="" tabindex="0" placeholder="" />
-              <label for="Field2">Ime</label>
+            <span class="left firstName">
+              <input id="firstName1" name="firstName1" type="text" class="field text fn" value="" tabindex="0"
+                placeholder="" />
+              <label for="firstName1">Ime</label>
             </span>
 
-            <span class="right prezime">
-              <input id="Field3" name="Field3" type="text" class="field text ln" value="" tabindex="0" placeholder="" />
-              <label for="Field3">Prezime</label>
+            <span class="right lastName">
+              <input id="lastName1" name="lastName1" type="text" class="field text ln" value="" tabindex="0"
+                placeholder="" />
+              <label for="lastName1">Prezime</label>
             </span>
           </div>
 
         </li>
 
         <!-- adresa -->
-        <li id="foli4" class="complex notranslate      ">
+        <li id="foli3" class="complex notranslate      ">
 
-          <label class="desc" id="title4">
+          <label class="desc" id="title3">
             Adresa
           </label>
 
           <div>
-            <span class="full addr1">
-              <input id="Field4" name="Field4" type="text" class="field text addr" value="" tabindex="0"
+            <span class="full address1">
+              <input id="address1" name="address1" type="text" class="field text addr" value="" tabindex="0"
                 placeholder="" />
-              <label for="Field4">Ulica i kućni broj</label>
+              <label for="address1">Ulica i kućni broj</label>
             </span>
 
-            <span class="left city">
-              <input id="Field6" name="Field6" type="text" class="field text addr" value="" tabindex="0"
-                placeholder="" />
-              <label for="Field6">Mjesto</label>
+            <span class="left city1">
+              <input id="city1" name="city1" type="text" class="field text addr" value="" tabindex="0" placeholder="" />
+              <label for="city1">Mjesto</label>
             </span>
 
-            <span class="right zip">
-              <input id="Field8" name="Field8" type="text" class="field text addr" value="" maxlength="15" tabindex="0"
+            <span class="right zip1">
+              <input id="zip1" name="zip1" type="text" class="field text addr" value="" maxlength="15" tabindex="0"
                 placeholder="" />
-              <label for="Field8">Poštanski broj</label>
+              <label for="zip1">Poštanski broj</label>
             </span>
           </div>
+        </li>
 
-          <!-- MBG -->
+        <!-- MBG -->
         <li id="foli4" class="complex notranslate      ">
 
           <div>
@@ -135,22 +143,38 @@
 
         </li>
 
-        <!-- fon -->
-        <li id="foli10" class="notranslate      ">
 
-          <label class="desc" id="title10" for="Field10">
-            Telefonski broj
-          </label>
+        <!-- fon -->
+        <li id="foli10" class="complex notranslate      ">
+
           <div>
-            <input id="Field10" class="field text medium" name="Field10" tabindex="0" placeholder="" type="tel"
-              maxlength="255" value="" />
+            <span class="left fon">
+              <label class="desc" id="title10" for="Field10">
+                Telefonski broj
+              </label>
+              <div>
+                <input id="Field10" class="field text medium" name="Field10" tabindex="0" placeholder="" type="tel"
+                  maxlength="255" value="" />
+              </div>
+            </span>
+
+
+            <!-- mob -->
+            <span class="right mob">
+              <label class="desc " id="title11" for="Field11">
+                Broj mobitela
+              </label>
+              <div>
+                <input id="Field11" class="field text medium" name="Field11" tabindex="0" placeholder="" type="tel"
+                  maxlength="255" value="" />
+              </div>
+            </span>
           </div>
 
         </li>
 
-
+        <!-- ======================================= -->
         <!-- OSIGURANIK NOVI DIO -->
-
 
         <li id="foli17" class="notranslate section      ">
           <section>
@@ -168,74 +192,76 @@
           </label>
 
           <div>
-            <span class="left ime">
-              <input id="Field2" name="Field2" type="text" class="field text fn" value="" tabindex="0" placeholder="" />
-              <label for="Field2">Ime</label>
+            <span class="left firstName">
+              <input id="firstName1" name="firstName1" type="text" class="field text fn" value="" tabindex="0"
+                placeholder="" />
+              <label for="firstName1">Ime</label>
             </span>
 
-            <span class="right prezime">
-              <input id="Field3" name="Field3" type="text" class="field text ln" value="" tabindex="0" placeholder="" />
-              <label for="Field3">Prezime</label>
+            <span class="right lastName">
+              <input id="lastName1" name="lastName1" type="text" class="field text ln" value="" tabindex="0"
+                placeholder="" />
+              <label for="lastName1">Prezime</label>
             </span>
           </div>
 
         </li>
 
         <!-- adresa -->
-        <li id="foli4" class="complex notranslate      ">
+        <li id="foli3" class="complex notranslate      ">
 
-          <label class="desc" id="title4">
+          <label class="desc" id="title3">
             Adresa
           </label>
 
           <div>
-            <span class="full addr1">
-              <input id="Field4" name="Field4" type="text" class="field text addr" value="" tabindex="0"
+            <span class="full address1">
+              <input id="address1" name="address1" type="text" class="field text addr" value="" tabindex="0"
                 placeholder="" />
-              <label for="Field4">Ulica i kućni broj</label>
+              <label for="address1">Ulica i kućni broj</label>
             </span>
 
-            <span class="left city">
-              <input id="Field6" name="Field6" type="text" class="field text addr" value="" tabindex="0"
-                placeholder="" />
-              <label for="Field6">Mjesto</label>
+            <span class="left city1">
+              <input id="city1" name="city1" type="text" class="field text addr" value="" tabindex="0" placeholder="" />
+              <label for="city1">Mjesto</label>
             </span>
 
-            <span class="right zip">
-              <input id="Field8" name="Field8" type="text" class="field text addr" value="" maxlength="15" tabindex="0"
+            <span class="right zip1">
+              <input id="zip1" name="zip1" type="text" class="field text addr" value="" maxlength="15" tabindex="0"
                 placeholder="" />
-              <label for="Field8">Poštanski broj</label>
+              <label for="zip1">Poštanski broj</label>
             </span>
           </div>
+        </li>
 
-          <!-- MBG -->
+        <!-- MBG -->
         <li id="foli4" class="complex notranslate      ">
 
           <div>
             <span class="left MBG">
-              <label class="desc " id="title14" for="Field14">
+              <label class="desc " id="title16" for="Field16">
                 Matični broj građana
               </label>
 
               <div>
-                <input id="Field14" name="Field14" type="text" class="field text nospin small" value="" maxlength="13"
-                  tabindex="0" onkeyup="validateRange(14, 'digit');" placeholder="" />
-                <label>Unesite <var id="rangeMinMsg14">13</var> znamenki&nbsp;&nbsp;&nbsp; <em class="currently">Uneseno
-                    <var id="rangeUsedMsg14">0</var> znamenki</em></label>
+                <input id="Field16" name="Field16" type="text" class="field text nospin small" value="" maxlength="13"
+                  tabindex="0" onkeyup="validateRange(16, 'digit');" placeholder="" />
+                <label>Unesite <var id="rangeMinMsg16">13</var> znamenki&nbsp;&nbsp;&nbsp; <em class="currently">Uneseno
+                    <var id="rangeUsedMsg16">0</var> znamenki</em></label>
               </div>
             </span>
 
             <!-- OIB -->
             <span class="right OIB">
-              <label class="desc " id="title15" for="Field15">
+              <label class="desc " id="title17" for="Field17">
                 Osobni identifikacijski broj
               </label>
 
               <div>
-                <input id="Field15" name="Field15" type="text" class="field text nospin small" value="" maxlength="11"
-                  tabindex="0" onkeyup="validateRange(15, 'digit');" placeholder="" />
-                <label>Unesite <var id="rangeMinMsg15">11</var> znamenki
-                  &nbsp;&nbsp;&nbsp; <em class="currently">Uneseno <var id="rangeUsedMsg15">0</var>
+                <input id="Field17" name="Field17" type="text" class="field text nospin small" value="" maxlength="11"
+                  tabindex="0" onkeyup="validateRange(17, 'digit');" placeholder="" />
+                <label>Unesite <var id="rangeMinMsg17">11</var> znamenki
+                  &nbsp;&nbsp;&nbsp; <em class="currently">Uneseno <var id="rangeUsedMsg17">0</var>
                     znamenki</em></label>
               </div>
             </span>
@@ -244,7 +270,7 @@
         </li>
 
         <!-- fon -->
-        <li id="foli10" class="notranslate      ">
+        <!-- <li id="foli10" class="notranslate      ">
 
           <label class="desc" id="title10" for="Field10">
             Telefonski broj
@@ -254,10 +280,48 @@
               maxlength="255" value="" />
           </div>
 
+        </li> -->
+
+        <!-- ======================================= -->
+        <!-- ADRESA MJESTA OSIGURANJA NOVI DIO -->
+
+        <li id="foli17" class="notranslate section      ">
+          <section>
+            <h3 id="title17">
+              ADRESA MJESTA OSIGURANJA
+            </h3>
+          </section>
+        </li>
+
+        <!-- adresa -->
+        <li id="foli3" class="complex notranslate      ">
+
+          <label class="desc" id="title3">
+            Adresa
+          </label>
+
+          <div>
+            <span class="full address1">
+              <input id="address1" name="address1" type="text" class="field text addr" value="" tabindex="0"
+                placeholder="" />
+              <label for="address1">Ulica i kućni broj</label>
+            </span>
+
+            <span class="left city1">
+              <input id="city1" name="city1" type="text" class="field text addr" value="" tabindex="0" placeholder="" />
+              <label for="city1">Mjesto</label>
+            </span>
+
+            <span class="right zip1">
+              <input id="zip1" name="zip1" type="text" class="field text addr" value="" maxlength="15" tabindex="0"
+                placeholder="" />
+              <label for="zip1">Poštanski broj</label>
+            </span>
+          </div>
         </li>
 
 
-
+        <!-- ======================================= -->
         <!-- RADIO BUTTONS -->
 
         <li id="foli17" class="notranslate section      ">
@@ -371,7 +435,7 @@ background:none !important;border:none !important;color:blue !important; text-in
         </li>
 
       </ul>
-      
+
     </form>
 
 

@@ -33,20 +33,20 @@ function initializeFocus(){
 	}
 }
 
-function highlight(el, depth){
-	if(depth == 2){var fieldContainer = el.parentNode.parentNode;}
-	if(depth == 3){var fieldContainer = el.parentNode.parentNode.parentNode;}
-	if(depth == 4){var fieldContainer = el.parentNode.parentNode.parentNode.parentNode;}
+// function highlight(el, depth){
+// 	if(depth == 2){var fieldContainer = el.parentNode.parentNode;}
+// 	if(depth == 3){var fieldContainer = el.parentNode.parentNode.parentNode;}
+// 	if(depth == 4){var fieldContainer = el.parentNode.parentNode.parentNode.parentNode;}
 	
-	addClassName(fieldContainer, 'focused', true);
-	var focusedFields = getElementsByClassName(document, "*", "focused");
+// 	addClassName(fieldContainer, 'focused', true);
+// 	var focusedFields = getElementsByClassName(document, "*", "focused");
 	
-	for(i = 0; i < focusedFields.length; i++) {
-		if(focusedFields[i] != fieldContainer){
-			removeClassName(focusedFields[i], 'focused');
-		}
-	}
-}
+// 	for(i = 0; i < focusedFields.length; i++) {
+// 		if(focusedFields[i] != fieldContainer){
+// 			removeClassName(focusedFields[i], 'focused');
+// 		}
+// 	}
+// }
 
 function ifInstructs(){
 	var container = document.getElementById('public');
