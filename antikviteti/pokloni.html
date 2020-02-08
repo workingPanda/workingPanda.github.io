@@ -13,7 +13,7 @@
 
    <!-- Site title
    ================================================== -->
-   <title>Antikviteti Rožić</title>
+   <title>Antikviteti Rožić | Unikatni pokloni</title>
 
    <!-- Bootstrap CSS
    ================================================== -->
@@ -41,9 +41,27 @@
    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400|Playfair+Display&display=swap"
       rel="stylesheet">
 
-   <!-- Bootstrap Dropdown Hover JS 
+   <!-- Bootstrap Dropdown Hover  
 ================================================== -->
    <link rel="stylesheet" href="css/bootstrap-dropdownhover.css">
+
+   <!-- Lightbox 
+================================================== -->
+   <link rel="stylesheet" href="css/lightbox.min.css">
+
+
+   <!-- Gallery 
+================================================== -->
+   <!-- load stylesheets -->
+   <!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400"> -->
+   <!-- Google web font "Open Sans", https://fonts.google.com/ -->
+   <!-- <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"> -->
+   <!-- Font Awesome, http://fontawesome.io/ -->
+   <!-- <link rel="stylesheet" href="css/bootstrap.min.css">  -->
+   <!-- Bootstrap styles, https://getbootstrap.com/ -->
+   <link rel="stylesheet" href="css/gallery.css">
+   <!-- Templatemo style -->
+
 
 </head>
 
@@ -81,17 +99,17 @@
          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
             <ul class="nav navbar-nav">
-               <li class="active"><a href="index.html">Početna <span class="sr-only">(current)</span></a></li>
+               <li><a href="onama.html">O nama</a></li>
                <li><a href="usluge.html">Naše usluge</a></li>
                <li class="dropdown">
                   <a href="predmeti_galerija.html" class="dropdown-toggle" data-toggle="dropdown" role="button"
                      aria-haspopup="true" aria-expanded="false">Predmeti na prodaju</a>
                   <ul class="dropdown-menu">
-                     <li><a href="lampe.html">Rasvjetna tijela</a></li>
-                     <li><a href="porculan.html">Porculan i staklo</a></li>
-                     <li><a href="nakit.html">Nakit</a></li>
-                     <li role="separator" class="divider"></li>
-                     <li><a href="vasi.html">Vaši antikviteti</a></li>
+                     <li><a href="predmeti_lampe.html">Rasvjetna tijela</a></li>
+                     <li><a href="predmeti_porculan.html">Porculan i staklo</a></li>
+                     <li><a href="predmeti_nakit.html">Nakit</a></li>
+                     <!-- <li role="separator" class="divider"></li> -->
+                     <!-- <li><a href="predmeti_vasi.html">Vaši antikviteti</a></li> -->
                   </ul>
                </li>
                <li><a href="pokloni.html">Unikatni pokloni</a></li>
@@ -99,10 +117,10 @@
                   <a href="izlozbe_galerija.html" class="dropdown-toggle" data-toggle="dropdown" role="button"
                      aria-haspopup="true" aria-expanded="false">Prodajne izložbe</a>
                   <ul class="dropdown-menu">
-                     <li><a href="klo2015.html">Klovićevi dvori 2015</a></li>
-                     <li><a href="int1999.html">Intercontinental 1999</a></li>
-                     <li><a href="int1998.html">Intercontinental 1998</a></li>
-                     <li><a href="mim1996.html">Mimara 1996</a></li>
+                     <li><a href="izlozbe_klo2015.html">Klovićevi dvori 2015</a></li>
+                     <li><a href="izlozbe_int1999.html">Intercontinental 1999</a></li>
+                     <li><a href="izlozbe_int1998.html">Intercontinental 1998</a></li>
+                     <li><a href="izlozbe_mim1996.html">Mimara 1996</a></li>
                   </ul>
                </li>
                <li><a href="kontakt.html">Kontakt</a></li>
@@ -114,105 +132,338 @@
    </nav>
 
 
-<!-- Header section
+   <!-- Header section
 ================================================== -->
-<section id="header" class="header-three">
-	<div class="container">
-		<div class="row">
-
-			<div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
-            	<div class="header-thumb">
-              		 <h1 class="wow fadeIn" data-wow-delay="0.6s">O nama</h1>
-              		 <h3 class="wow fadeInUp" data-wow-delay="0.9s">Dobrodošli u naš svijet</h3>
-           		</div>
-			</div>
-
-		</div>
-	</div>		
-</section>
-
-
-<!-- About section
-================================================== -->
-<section id="about">
-   <div class="container">
-      <div class="row">
-
-         <div class="wow fadeInUp col-md-4 col-sm-5" data-wow-delay="1.3s">
-         	<img src="images/about-img1.jpg" class="img-responsive" alt="About">
-         	<!-- <h1>About Pure Mix</h1>
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat.</p> -->
-		</div>
-
-		<div class="wow fadeInUp col-md-7 col-sm-7" data-wow-delay="1.6s">
-			<h1>Dobrodošli u svijet umjetnina i starina...</h1>
-			<p>Antikviteti Rožić obiteljski je obrt za antikvitete, starine i umjetnine otvoren 1990. godine u Zagrebu, no antikvitetima se bavimo gotovo cijeli život pa tako možemo reći da raspolažemo s preko 40 godina iskustva. Redovito posjećujemo izložbe i sajmove u Hrvatskoj, ali i u Austriji, Mađarskoj, Italiji, Srbiji, Nizozemskoj i drugdje, kako bismo se upoznali s trenutnim trendovima i stanjem na tržištu. Kontinuiranim proučavanjem stručne literature, posjećivanjem specijaliziranih izložbi i sajmova, i stalnim kontaktima s kupcima i kolegama iz branše u Hrvatskoj i inozemstvu, svakodnevno stječemo nove informacije, učimo i dalje, i radimo na promociji kulture antikviteta u Hrvatskoj i znanja o njima.</p>
-			<!-- <blockquote></blockquote> -->
-			<!-- <img src="images/about-img.jpg" class="img-responsive" alt="About">
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat.</p> -->
-		</div>
-
-	   <div class="clearfix"></div>
-
-		<div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="1.4s">
-			<h3>Ljubica Rožić</h3>
-			<p>Ljubica Rožić, poznatija kao Beba, 20 je godina vodila dućan antikviteta u Medulićevoj 8, u početku s partnerom Miroslavom Tischlerom, a od 2002. samostalno. Sa svojim je antikvitetima, zajedno s Fedorom Rožićem, sudjelovala na nizu prodajnih izložbi održanih u muzeju Mimara (1996.), hotelu Westin (1998. i 1999.), Klovićevim dvorima (2002., 2005., te ponovno 2015. godine). Bila je i Lovac na antikvitete, uz kolegu Juru Gašparca, u HRT-ovoj seriji Lov na antikvitete.</p>
-		</div>
-
-		<div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="1.6s">
-			<h3>Fedor Rožić </h3>
-			<p>Fedor Rožić jedan je od rijetkih verificiranih sudskih vještaka za stilski namještaj u Hrvatskoj, te se bavi procjenom namještaja i drugih predmeta od povijesno-umjetničke vrijednosti. Uz to je jedan od osnivača UHTUS-a, Udruženja hrvatskih trgovaca umjetninama i starinama, čiji je bio predsjednik u prva dva mandata. Vodio je radnju za restauraciju stilskog namještaja, kultnu Renesansu, u Ilici 92, koja je zatvorena krajem 1998. Beba i Fedor jedni su od pokretača danas vrlo popularnog Buvljaka na Britancu, sajma starina koji se punih 18 godina, od Božića 2001. godine, svake nedjelje održava na zagrebačkom Britanskom trgu.<br></p>
-		</div>
-
-		<div class="clearfix"></div>
-
-		<div class="wow fadeInUp col-md-12 col-sm-12" data-wow-delay="1.3s">
-			<img src="images/slike-na-dnu-teksta_orig.jpg" class="img-responsive" alt="About">
-	   </div>
-	   <div class="clearfix"></div>
-
-
+   <section id="header" class="header-izlozbe">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-offset-1 col-lg-10 col-md-offset-0 col-md-12 col-sm-offset-0 col-sm-12">
+               <div class="header-thumb">
+                  <h1 class="wow fadeIn" data-wow-delay="1.6s">Unikatni pokloni</h1>
+                  <h3 class="wow fadeInUp" data-wow-delay="1.9s">
+                     Obradujte nekoga jedinstvenim poklonom...
+                  </h3>
+               </div>
+            </div>
+         </div>
       </div>
-   </div>
-</section>
+   </section>
 
-
-<!-- Footer section
+   <!-- About section
 ================================================== -->
-<footer>
-	<div class="container">
-	   <div class="row">
+   <!-- <section id="about" class="izlozbe">
+      <div class="container">
+         <div class="row">
 
-		  <div class="col-md-12 col-sm-12">
-			 <p class="wow fadeInUp" data-wow-delay="0.3s">Copyright © 2020 Antikviteti Rožić
-			 </p>
-			 <ul class="social-icon wow fadeInUp" data-wow-delay="0.6s">
-				<li><a href="#" class="fa fa-facebook"></a></li>
-				<li><a href="#" class="fa fa-twitter"></a></li>
-				<li><a href="#" class="fa fa-dribbble"></a></li>
-				<li><a href="#" class="fa fa-behance"></a></li>
-				<li><a href="#" class="fa fa-google-plus"></a></li>
-			 </ul>
-		  </div>
+            <div class="wow fadeInUp col-md-3 col-sm-4" data-wow-delay="1.3s">
+               <a href="img/klo15/13.jpg" data-lightbox="image" data-title="">
+                  <img src="img/klo15/13.jpg" alt="Božić starog Zagreba">
+               </a>
+            </div>
 
-	   </div>
-	</div>
- </footer>
+            <div class="wow fadeInUp col-md-offset-1 col-md-6 col-sm-7" data-wow-delay="1.6s">
+               <h1>Postav zbirke Rožić</h1>
+               <p><b>"Božić starog Zagreba"</b> bio je naziv prodajne izložbe antikviteta, slikarstva i umjetnina
+                  održane u Klovićevim dvorima u vrijeme Adventa, od 12. do 24. prosinca 2015. Prva ovakva prodajna
+                  izložba na kojoj su sudjelovali <b> Antikviteti Rožić</b>, održana je u muzeju Mimara još 1996.
+                  godine, a kasnijih godina postavljene su u hotelu Westin i u Klovićevim dvorima. 
+                  <br>Na ovoj je izložbi sa
+                  svojim kolekcijama sudjelovalo devet izlagača, a uz izložbu starina koja je dočaravala sjaj građanskog
+                  Zagreba iz prošlih vremena, bio je organiziran i popratni program koji je uključivao kićenja bora,
+                  kuhanje tradicionalnog bakalara, pjevanja božićnih pjesama i zanimljiva predavanja.</p>
+            </div>
+
+            <div class="clearfix"></div>
+
+         </div>
+      </div>
+   </section> -->
+
+
+   <!-- Gallery section
+================================================== -->
+   <section id="portfolio">
+      <div class="container">
+         <div class="row">
+
+            <div class="wow fadeInUp col-md-12 col-sm-12" data-wow-delay="1.3s">
+               <div class="tm-main-content tm-gallery-container">
+                  <div class="grid">
+
+                     <div class="grid-item">
+                        <a href="img/klo15/01.jpg" data-lightbox="image-1" data-title="">
+                           <img src="img/klo15/thumbs/01.jpg" alt="Image">
+                        </a>
+                     </div>
+                     <div class="grid-item">
+                        <a href="img/klo15/02.jpg" data-lightbox="image-1" data-title="">
+                           <img src="img/klo15/thumbs/02.jpg" alt="Image">
+                        </a>
+                     </div>
+
+                     <div class="grid-item">
+                        <a href="img/klo15/03.jpg" data-lightbox="image-1" data-title="">
+                           <img src="img/klo15/thumbs/03.jpg" alt="Image">
+                        </a>
+                     </div>
+
+                     <div class="grid-item">
+                        <a href="img/klo15/04.jpg" data-lightbox="image-1" data-title="">
+                           <img src="img/klo15/thumbs/04.jpg" alt="Image">
+                        </a>
+                     </div>
+
+                     <div class="grid-item">
+                        <a href="img/klo15/05.jpg" data-lightbox="image-1" data-title="">
+                           <img src="img/klo15/thumbs/05.jpg" alt="Image">
+                        </a>
+                     </div>
+
+                     <div class="grid-item">
+                        <a href="img/klo15/06.jpg" data-lightbox="image-1" data-title="">
+                           <img src="img/klo15/thumbs/06.jpg" alt="Image">
+                        </a>
+                     </div>
+
+                     <div class="grid-item">
+                        <a href="img/klo15/07.jpg" data-lightbox="image-1" data-title="">
+                           <img src="img/klo15/thumbs/07.jpg" alt="Image">
+                        </a>
+                     </div>
+
+                     <div class="grid-item">
+                        <a href="img/klo15/08.jpg" data-lightbox="image-1" data-title="">
+                           <img src="img/klo15/thumbs/08.jpg" alt="Image">
+                        </a>
+                     </div>
+
+                     <div class="grid-item">
+                        <a href="img/klo15/09.jpg" data-lightbox="image-1" data-title="">
+                           <img src="img/klo15/thumbs/09.jpg" alt="Image">
+                        </a>
+                     </div>
+
+                     <div class="grid-item">
+                        <a href="img/klo15/10.jpg" data-lightbox="image-1" data-title="">
+                           <img src="img/klo15/thumbs/10.jpg" alt="Image">
+                        </a>
+                     </div>
+
+                     <div class="grid-item">
+                        <a href="img/klo15/11.jpg" data-lightbox="image-1" data-title="">
+                           <img src="img/klo15/thumbs/11.jpg" alt="Image">
+                        </a>
+                     </div>
+
+                     <div class="grid-item">
+                        <a href="img/klo15/12.jpg" data-lightbox="image-1" data-title="">
+                           <img src="img/klo15/thumbs/12.jpg" alt="Image">
+                        </a>
+                     </div>
+
+                     <div class="grid-item">
+                        <a href="img/klo15/14.jpg" data-lightbox="image-1" data-title="">
+                           <img src="img/klo15/thumbs/14.jpg" alt="Image">
+                        </a>
+                     </div>
+
+                     <div class="grid-item">
+                        <a href="img/klo15/15.jpg" data-lightbox="image-1" data-title="">
+                           <img src="img/klo15/thumbs/15.jpg" alt="Image">
+                        </a>
+                     </div>
+
+                     <div class="grid-item">
+                        <a href="img/klo15/16.jpg" data-lightbox="image-1" data-title="">
+                           <img src="img/klo15/thumbs/16.jpg" alt="Image">
+                        </a>
+                     </div>
+
+                     <div class="grid-item">
+                        <a href="img/klo15/17.jpg" data-lightbox="image-1" data-title="">
+                           <img src="img/klo15/thumbs/17.jpg" alt="Image">
+                        </a>
+                     </div>
+
+                     <div class="grid-item">
+                        <a href="img/klo15/18.jpg" data-lightbox="image-1" data-title="">
+                           <img src="img/klo15/thumbs/18.jpg" alt="Image">
+                        </a>
+                     </div>
+
+                     <div class="grid-item">
+                        <a href="img/klo15/19.jpg" data-lightbox="image-1" data-title="">
+                           <img src="img/klo15/thumbs/19.jpg" alt="Image">
+                        </a>
+                     </div>
+
+                     <div class="grid-item">
+                        <a href="img/klo15/20.jpg" data-lightbox="image-1" data-title="">
+                           <img src="img/klo15/thumbs/20.jpg" alt="Image">
+                        </a>
+                     </div>
+
+                     <div class="grid-item">
+                        <a href="img/klo15/21.jpg" data-lightbox="image-1" data-title="">
+                           <img src="img/klo15/thumbs/21.jpg" alt="Image">
+                        </a>
+                     </div>
+
+                     <div class="grid-item">
+                        <a href="img/klo15/22.jpg" data-lightbox="image-1" data-title="">
+                           <img src="img/klo15/thumbs/22.jpg" alt="Image">
+                        </a>
+                     </div>
+
+                     <div class="grid-item">
+                        <a href="img/klo15/23.jpg" data-lightbox="image-1" data-title="">
+                           <img src="img/klo15/thumbs/23.jpg" alt="Image">
+                        </a>
+                     </div>
+
+                     <div class="grid-item">
+                        <a href="img/klo15/24.jpg" data-lightbox="image-1" data-title="">
+                           <img src="img/klo15/thumbs/24.jpg" alt="Image">
+                        </a>
+                     </div>
+
+                     <div class="grid-item">
+                        <a href="img/klo15/25.jpg" data-lightbox="image-1" data-title="">
+                           <img src="img/klo15/thumbs/25.jpg" alt="Image">
+                        </a>
+                     </div>
+
+                     <div class="grid-item">
+                        <a href="img/klo15/26.jpg" data-lightbox="image-1" data-title="">
+                           <img src="img/klo15/thumbs/26.jpg" alt="Image">
+                        </a>
+                     </div>
+
+                     <div class="grid-item">
+                        <a href="img/klo15/27.jpg" data-lightbox="image-1" data-title="">
+                           <img src="img/klo15/thumbs/27.jpg" alt="Image">
+                        </a>
+                     </div>
+
+                     <div class="grid-item">
+                        <a href="img/klo15/28.jpg" data-lightbox="image-1" data-title="">
+                           <img src="img/klo15/thumbs/28.jpg" alt="Image">
+                        </a>
+                     </div>
+
+                     <div class="grid-item">
+                        <a href="img/klo15/29.jpg" data-lightbox="image-1" data-title="">
+                           <img src="img/klo15/thumbs/29.jpg" alt="Image">
+                        </a>
+                     </div>
+
+                     <div class="grid-item">
+                        <a href="img/klo15/30.jpg" data-lightbox="image-1" data-title="">
+                           <img src="img/klo15/thumbs/30.jpg" alt="Image">
+                        </a>
+                     </div>
+
+                     <div class="grid-item">
+                        <a href="img/klo15/31.jpg" data-lightbox="image-1" data-title="">
+                           <img src="img/klo15/thumbs/31.jpg" alt="Image">
+                        </a>
+                     </div>
+
+                     <div class="grid-item">
+                        <a href="img/klo15/32.jpg" data-lightbox="image-1" data-title="">
+                           <img src="img/klo15/thumbs/32.jpg" alt="Image">
+                        </a>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+
+
+   <!-- Footer section
+================================================== -->
+   <footer>
+      <div class="container">
+         <div class="row">
+
+            <div class="col-md-12 col-sm-12">
+               <p class="wow fadeInUp" data-wow-delay="0.3s">Copyright © 2020 Antikviteti Rožić
+               </p>
+               <ul class="social-icon wow fadeInUp" data-wow-delay="0.6s">
+                  <li><a href="#" class="fa fa-facebook"></a></li>
+                  <li><a href="#" class="fa fa-twitter"></a></li>
+                  <li><a href="#" class="fa fa-dribbble"></a></li>
+                  <li><a href="#" class="fa fa-behance"></a></li>
+                  <li><a href="#" class="fa fa-google-plus"></a></li>
+               </ul>
+            </div>
+
+         </div>
+      </div>
+   </footer>
 
 
    <!-- Javascript 
 ================================================== -->
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/isotope.js"></script>
-<script src="js/imagesloaded.min.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/custom.js"></script>
+   <script src="js/jquery.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/isotope.js"></script>
+   <script src="js/imagesloaded.min.js"></script>
+   <script src="js/wow.min.js"></script>
+   <script src="js/custom.js"></script>
 
-<!-- Bootstrap Dropdown Hover JS 
+   <!-- Bootstrap Dropdown Hover JS 
 ================================================== -->
-<script src="js/bootstrap-dropdownhover.js"></script>
+   <script src="js/bootstrap-dropdownhover.js"></script>
+
+   <!-- Lightbox 
+================================================== -->
+
+   <script src="js/lightbox.min.js"></script>
+
+
+   <!-- load JS files -->
+
+   <!-- <script src="js/jquery-1.11.3.min.js"></script> -->
+   <script src="js/imagesloaded.pkgd.min.js"></script>
+   <script src="js/masonry.pkgd.min.js"></script>
+
+   <!-- gallery scripts -->
+   <script>
+
+      $(document).ready(function () {
+
+         // init Masonry
+         // https://codepen.io/craigwheeler/pen/MYjBga
+         var $grid = $('.grid').masonry({
+
+            // set itemSelector so .grid-sizer is not used in layout
+            // itemSelector: '.grid-item',
+            // use element for option
+            // columnWidth: '.grid-sizer',
+            // percentPosition: true
+
+            itemSelector: '.grid-item',
+            isFitWidth: true,
+            columnWidth: 1
+         });
+         // layout Masonry after each image loads
+         $grid.imagesLoaded().progress(function () {
+            $grid.masonry('layout');
+         });
+
+         // Update the current year in copyright
+         $('.tm-current-year').text(new Date().getFullYear());
+      });
+
+   </script>
 
 
 </body>
+
 </html>
