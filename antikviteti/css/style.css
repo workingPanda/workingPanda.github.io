@@ -624,12 +624,55 @@ a.icon {
   padding-top: 200px !important;
 }
 
+.header-naslovna {
+  background: url('../images/naslovna_header.jpg') no-repeat;
+  height: 70vh !important;
+  min-height: 520px;
+  padding-top: 200px !important;
+}
+
 .header-two {
   background: url('../images/header-bg.jpg') no-repeat;
 }
 
 .header-three {
-  background: url('../images/header-three-bg.jpg') no-repeat;
+  background: url('../images/onama_header.jpg') no-repeat;
+}
+
+.header-onama {
+  background: url('../images/onama_header.jpg') no-repeat;
+}
+
+.header-lampe {
+  background: url('../images/lampa_header.jpg') no-repeat;
+}
+
+.header-kontakti {
+  background: url('../images/kontakti_header.jpg') no-repeat;
+}
+
+.header-usluge {
+  background: url('../images/usluge_header.jpg') no-repeat;
+}
+
+.header-izlozbe {
+  background: url('../img/klo15/28.jpg') no-repeat;
+}
+
+.header-2015 {
+  background: url('../img/klo15/30.jpg') no-repeat;
+}
+
+.header-1999 {
+  background: url('../img/klo15/04.jpg') no-repeat;
+}
+
+.header-1998 {
+  background: url('../img/klo15/14.jpg') no-repeat;
+}
+
+.header-1996 {
+  background: url('../img/klo15/25.jpg') no-repeat;
 }
 
 .header-four {
@@ -985,6 +1028,12 @@ a.icon {
 }
 
 
+#blog.pred-galerija {
+  padding-top: 2rem;
+  padding-bottom: 0rem;
+}
+
+
 
 /* footer section styles
 /* ========================================== */
@@ -1225,4 +1274,181 @@ footer {
     top: 50%;
   }
 
+}
+
+
+/* visina slika lightbox */
+
+.visina662 .carousel-inner>.item>a>img, 
+.visina662 .carousel-inner>.item>img, 
+.visina662 .img-responsive, 
+.visina662 .thumbnail a>img, 
+.visina662 .thumbnail>img {
+  display: block;
+  max-width: 100%;
+  height: 370px;
+  object-fit: cover;
+}
+
+.visina663 .carousel-inner>.item>a>img, 
+.visina663 .carousel-inner>.item>img, 
+.visina663 .img-responsive, 
+.visina663 .thumbnail a>img, 
+.visina663 .thumbnail>img {
+  display: block;
+  max-width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.visina993 .carousel-inner>.item>a>img, 
+.visina993 .carousel-inner>.item>img, 
+.visina993 .img-responsive, 
+.visina993 .thumbnail a>img, 
+.visina993 .thumbnail>img {
+  display: block;
+  max-width: 100%;
+  height: 360px;
+  object-fit: cover;
+}
+
+.visina664 .carousel-inner>.item>a>img, 
+.visina664 .carousel-inner>.item>img, 
+.visina664 .img-responsive, 
+.visina664 .thumbnail a>img, 
+.visina664 .thumbnail>img {
+  display: block;
+  max-width: 100%;
+  height: 175px;
+  object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  .visina662 .carousel-inner>.item>a>img, 
+  .visina662 .carousel-inner>.item>img, 
+  .visina662 .img-responsive, 
+  .visina662 .thumbnail a>img, 
+  .visina662 .thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: 303px;
+    object-fit: cover;
+  }
+  
+  .visina663 .carousel-inner>.item>a>img, 
+  .visina663 .carousel-inner>.item>img, 
+  .visina663 .img-responsive, 
+  .visina663 .thumbnail a>img, 
+  .visina663 .thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: 195px;
+    object-fit: cover;
+  }
+  
+  .visina993 .carousel-inner>.item>a>img, 
+  .visina993 .carousel-inner>.item>img, 
+  .visina993 .img-responsive, 
+  .visina993 .thumbnail a>img, 
+  .visina993 .thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: 293px;
+    object-fit: cover;
+  }
+
+  .visina664 .carousel-inner>.item>a>img, 
+  .visina664 .carousel-inner>.item>img, 
+  .visina664 .img-responsive, 
+  .visina664 .thumbnail a>img, 
+  .visina664 .thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: 142px;
+    object-fit: cover;
+  }
+  
+}
+
+@media (max-width: 990px) {
+  .visina662 .carousel-inner>.item>a>img, 
+  .visina662 .carousel-inner>.item>img, 
+  .visina662 .img-responsive, 
+  .visina662 .thumbnail a>img, 
+  .visina662 .thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: 230px;
+    object-fit: cover;
+  }
+  
+  .visina993 .carousel-inner>.item>a>img, 
+  .visina993 .carousel-inner>.item>img, 
+  .visina993 .img-responsive, 
+  .visina993 .thumbnail a>img, 
+  .visina993 .thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .visina663 .carousel-inner>.item>a>img, 
+  .visina663 .carousel-inner>.item>img, 
+  .visina663 .img-responsive, 
+  .visina663 .thumbnail a>img, 
+  .visina663 .thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: 147px;
+    object-fit: cover;
+  }
+  
+  .visina664 .carousel-inner>.item>a>img, 
+  .visina664 .carousel-inner>.item>img, 
+  .visina664 .img-responsive, 
+  .visina664 .thumbnail a>img, 
+  .visina664 .thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: 105px;
+    object-fit: cover;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .visina662 .carousel-inner>.item>a>img, 
+  .visina662 .carousel-inner>.item>img, 
+  .visina662 .img-responsive, 
+  .visina662 .thumbnail a>img, 
+  .visina662 .thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: 303px;
+    object-fit: cover;
+  }
+  
+  .visina663 .carousel-inner>.item>a>img, 
+  .visina663 .carousel-inner>.item>img, 
+  .visina663 .img-responsive, 
+  .visina663 .thumbnail a>img, 
+  .visina663 .thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .visina664 .carousel-inner>.item>a>img, 
+  .visina664 .carousel-inner>.item>img, 
+  .visina664 .img-responsive, 
+  .visina664 .thumbnail a>img, 
+  .visina664 .thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: 195px;
+    object-fit: cover;
+  }
+  
 }
