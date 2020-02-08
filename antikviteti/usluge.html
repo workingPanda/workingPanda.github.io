@@ -13,7 +13,7 @@
 
    <!-- Site title
    ================================================== -->
-   <title>Antikviteti Rožić</title>
+   <title>Antikviteti Rožić | Naše usluge</title>
 
    <!-- Bootstrap CSS
    ================================================== -->
@@ -44,6 +44,11 @@
    <!-- Bootstrap Dropdown Hover JS 
 ================================================== -->
    <link rel="stylesheet" href="css/bootstrap-dropdownhover.css">
+
+   <!-- Lightbox 
+================================================== -->
+   <link rel="stylesheet" href="css/lightbox.min.css">
+
 
 </head>
 
@@ -82,15 +87,16 @@
 
             <ul class="nav navbar-nav">
                <li><a href="onama.html">O nama</a></li>
+               <!-- <li><a href="usluge.html">Naše usluge</a></li> -->
                <li class="dropdown">
                   <a href="predmeti_galerija.html" class="dropdown-toggle" data-toggle="dropdown" role="button"
                      aria-haspopup="true" aria-expanded="false">Predmeti na prodaju</a>
                   <ul class="dropdown-menu">
-                     <li><a href="lampe.html">Rasvjetna tijela</a></li>
-                     <li><a href="porculan.html">Porculan i staklo</a></li>
-                     <li><a href="nakit.html">Nakit</a></li>
-                     <li role="separator" class="divider"></li>
-                     <li><a href="vasi.html">Vaši antikviteti</a></li>
+                     <li><a href="predmeti_lampe.html">Rasvjetna tijela</a></li>
+                     <li><a href="predmeti_porculan.html">Porculan i staklo</a></li>
+                     <li><a href="predmeti_nakit.html">Nakit</a></li>
+                     <!-- <li role="separator" class="divider"></li> -->
+                     <!-- <li><a href="predmeti_vasi.html">Vaši antikviteti</a></li> -->
                   </ul>
                </li>
                <li><a href="pokloni.html">Unikatni pokloni</a></li>
@@ -98,10 +104,10 @@
                   <a href="izlozbe_galerija.html" class="dropdown-toggle" data-toggle="dropdown" role="button"
                      aria-haspopup="true" aria-expanded="false">Prodajne izložbe</a>
                   <ul class="dropdown-menu">
-                     <li><a href="klo2015.html">Klovićevi dvori 2015</a></li>
-                     <li><a href="int1999.html">Intercontinental 1999</a></li>
-                     <li><a href="int1998.html">Intercontinental 1998</a></li>
-                     <li><a href="mim1996.html">Mimara 1996</a></li>
+                     <li><a href="izlozbe_klo2015.html">Klovićevi dvori 2015</a></li>
+                     <li><a href="izlozbe_int1999.html">Intercontinental 1999</a></li>
+                     <li><a href="izlozbe_int1998.html">Intercontinental 1998</a></li>
+                     <li><a href="izlozbe_mim1996.html">Mimara 1996</a></li>
                   </ul>
                </li>
                <li><a href="kontakt.html">Kontakt</a></li>
@@ -115,7 +121,7 @@
 
    <!-- Header section
 ================================================== -->
-   <section id="header" class="header-three">
+   <section id="header" class="header-usluge">
       <div class="container">
          <div class="row">
 
@@ -133,17 +139,20 @@
 
    <!-- About section
 ================================================== -->
-   <section id="about">
+   <section id="about" class="izlozbe">
       <div class="container">
          <div class="row">
 
-            <div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="1.3s">
-               <img src="images/about-img1.jpg" class="img-responsive" alt="About">
+            <div class="wow fadeInUp col-md-3 col-sm-4" data-wow-delay="1.3s">
+               <a href="images/usluge.jpg" data-lightbox="image" data-title="">
+                  <img src="images/usluge.jpg" alt="Naše usluge">
+               </a>
+               <!-- <img src="images/about-img1.jpg" class="img-responsive" alt="About"> -->
                <!-- <h1>About Pure Mix</h1>
 			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat.</p> -->
             </div>
 
-            <div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="1.6s">
+            <div class="wow col-lg-offset-1 fadeInUp col-md-8 col-sm-7" data-wow-delay="1.6s">
                <h1>Možemo Vam ponuditi...</h1>
                <!-- <p>- usluge prodaje, otkupa i komisione prodaje <br>
                   - besplatna procjena i stručno savjetovanje <br>
@@ -162,49 +171,57 @@
                </blockquote>
 
                <blockquote>
-                  <p> <b> dolazak k Vama na adresu u svrhu <br> informiranja i savjetovanja</b></p>
+                  <p> <b> dolazak k Vama na adresu u svrhu informiranja i savjetovanja</b></p>
                </blockquote>
 
                <blockquote>
-                  <p> <b> upućivanje na druge specijalizirane trgovce, <br> npr. za satove, sagove,
+                  <p> <b> upućivanje na specijalizirane trgovce, npr. za satove, sagove,
                         namještaj, oružje</b></p>
                </blockquote>
 
                <blockquote>
-                  <p> <b> za Vas pronalazimo rezervne djelove <br> za rasvjetna tijela i namještaj</b></p>
+                  <p> <b> za Vas pronalazimo rezervne djelove za rasvjetna tijela i namještaj</b></p>
                </blockquote>
 
                <blockquote>
-                  <p> <b> za Vas pronalazimo restauratore i majstore <br> za namještaj, nakit, posrebrivanje i sl.</b></p>
+                  <p> <b> za Vas pronalazimo restauratore i majstore za namještaj, nakit, posrebrivanje i sl.</b>
+                  </p>
                </blockquote>
 
                <blockquote>
-                  <p> <b> Za vaš predmet nalazimo idealnog kupca, <br> svakom kupcu željeni predmet!</b></p>
+                  <p> <b> Za vaš predmet nalazimo idealnog kupca, svakom kupcu željeni predmet!</b></p>
                </blockquote>
                <!-- <img src="images/about-img.jpg" class="img-responsive" alt="About">
 			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat.</p> -->
             </div>
 
             <div class="clearfix"></div>
+            <div id="about">
 
-            <div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="1.4s">
-               <h3>NOVO! </h3>
-               <p>Ako biste na našoj stranici željeli objaviti fotografiju predmeta kako bi je mogli vidjeti zainteresirani kupci, pošaljite nam kvalitetnu fotografiju na email i objavit ćemo je u galeriji 'Vaši antikviteti'.*</p>
-            </div>
+               <div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="1.4s">
+                  <h3>NOVO! </h3>
+                  <p>Ako biste na našoj stranici željeli objaviti fotografiju predmeta kako bi je mogli vidjeti
+                     zainteresirani kupci, pošaljite nam kvalitetnu fotografiju na email i objavit ćemo je u galeriji
+                     'Vaši
+                     antikviteti'.*</p>
+               </div>
 
-            <div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="1.6s">
-               <h3>Uvjeti objavljivanja</h3>
-               <p>Da bismo objavili vašu fotografiju, antikvitet ili umjetnički predmet mora zadovoljavati kriterije kvalitete i/ili starosti, o čemu zadržavamo pravo procijenjivanja. Vaši podaci neće biti objavljeni na stranici dok se za Vaš predmet ne javi zainteresirani kupac.</p>
-            </div>
+               <div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="1.6s">
+                  <h3>Uvjeti objavljivanja</h3>
+                  <p>Da bismo objavili vašu fotografiju, antikvitet ili umjetnički predmet mora zadovoljavati kriterije
+                     kvalitete i/ili starosti, o čemu zadržavamo pravo procijenjivanja. Vaši podaci neće biti objavljeni
+                     na
+                     stranici dok se za Vaš predmet ne javi zainteresirani kupac.</p>
+               </div>
 
-            <div class="clearfix"></div>
-<!-- 
+               <div class="clearfix"></div>
+               <!-- 
             <div class="wow fadeInUp col-md-12 col-sm-12" data-wow-delay="1.3s">
                <img src="images/slike-na-dnu-teksta_orig.jpg" class="img-responsive" alt="About">
             </div>
             <div class="clearfix"></div>
  -->
-
+            </div>
          </div>
       </div>
    </section>
@@ -245,6 +262,12 @@
    <!-- Bootstrap Dropdown Hover JS 
 ================================================== -->
    <script src="js/bootstrap-dropdownhover.js"></script>
+
+   <!-- Lightbox 
+================================================== -->
+
+   <script src="js/lightbox.min.js"></script>
+
 
 
 </body>
