@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
 
 <head>
 
@@ -35,16 +35,21 @@
    <!-- Google web font 
    ================================================== -->
    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
-
-   <!-- Fonts 
-    ================================================== -->
-   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400|Playfair+Display&display=swap"
-      rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
 
    <!-- Bootstrap Dropdown Hover JS 
-================================================== -->
+   ================================================== -->
    <link rel="stylesheet" href="css/bootstrap-dropdownhover.css">
 
+   <!-- Lightbox 
+   ================================================== -->
+   <link rel="stylesheet" href="css/lightbox.min.css">
+
+   <!-- Gallery 
+   ================================================== -->
+   <link rel="stylesheet" href="css/gallery.css">
+   
 </head>
 
 <body>
@@ -73,8 +78,7 @@
                   <i class="icon ion-navicon"></i>
                </div>
             </button>
-            <a class="navbar-brand " href="index.html">Antikviteti Rožić</a>
-
+            <a class="navbar-brand" href="index.html">Antikviteti Rožić</a>
          </div>
 
          <!-- Collect the nav links, forms, and other content for toggling -->
@@ -185,39 +189,81 @@
 
    <!-- Footer section
 ================================================== -->
-   <footer>
-      <div class="container">
-         <div class="row">
+<footer>
+   <div class="container">
+      <div class="row">
 
-            <div class="col-md-12 col-sm-12">
-               <p class="wow fadeInUp" data-wow-delay="0.3s">Copyright © 2020 Antikviteti Rožić
-               </p>
-               <ul class="social-icon wow fadeInUp" data-wow-delay="0.6s">
-                  <li><a href="#" class="fa fa-facebook"></a></li>
-                  <li><a href="#" class="fa fa-twitter"></a></li>
-                  <li><a href="#" class="fa fa-dribbble"></a></li>
-                  <li><a href="#" class="fa fa-behance"></a></li>
-                  <li><a href="#" class="fa fa-google-plus"></a></li>
-               </ul>
-            </div>
-
+         <div class="col-md-12 col-sm-12">
+            <p class="wow fadeInUp" data-wow-delay="0.3s">Copyright © 2020 Antikviteti Rožić
+            </p>
+            <!-- <ul class="social-icon wow fadeInUp" data-wow-delay="0.6s">
+               <li><a href="#" class="fa fa-facebook"></a></li>
+               <li><a href="#" class="fa fa-twitter"></a></li>
+               <li><a href="#" class="fa fa-dribbble"></a></li>
+               <li><a href="#" class="fa fa-behance"></a></li>
+               <li><a href="#" class="fa fa-google-plus"></a></li>
+            </ul> -->
          </div>
+
       </div>
-   </footer>
+   </div>
+</footer>
 
 
-   <!-- Javascript 
+<!-- Javascript 
 ================================================== -->
-   <script src="js/jquery.js"></script>
-   <script src="js/bootstrap.min.js"></script>
-   <script src="js/isotope.js"></script>
-   <script src="js/imagesloaded.min.js"></script>
-   <script src="js/wow.min.js"></script>
-   <script src="js/custom.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/isotope.js"></script>
+<script src="js/imagesloaded.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
 
-   <!-- Bootstrap Dropdown Hover JS 
+<!-- Bootstrap Dropdown Hover JS 
 ================================================== -->
-   <script src="js/bootstrap-dropdownhover.js"></script>
+<script src="js/bootstrap-dropdownhover.js"></script>
+
+<!-- Lightbox 
+================================================== -->
+
+<script src="js/lightbox.min.js"></script>
+
+
+<!-- load JS files -->
+
+<!-- <script src="js/jquery-1.11.3.min.js"></script> -->
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+
+<!-- gallery scripts -->
+<script>
+
+   $(document).ready(function () {
+
+      // init Masonry
+      // https://codepen.io/craigwheeler/pen/MYjBga
+      var $grid = $('.grid').masonry({
+
+         // set itemSelector so .grid-sizer is not used in layout
+         // itemSelector: '.grid-item',
+         // use element for option
+         // columnWidth: '.grid-sizer',
+         // percentPosition: true
+
+         itemSelector: '.grid-item',
+         isFitWidth: true,
+         columnWidth: 1
+      });
+      // layout Masonry after each image loads
+      $grid.imagesLoaded().progress(function () {
+         $grid.masonry('layout');
+      });
+
+      // Update the current year in copyright
+      $('.tm-current-year').text(new Date().getFullYear());
+   });
+
+</script>
 
 </body>
 
