@@ -1,0 +1,311 @@
+/* font-family: 'Playfair Display', serif; */
+/* font-family: 'Noto Sans JP', sans-serif; */
+
+/* Show/hide navbar script */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.6s;
+}
+
+#header {
+  margin-top: 57px;
+}
+
+/* Scrollbar options */
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+  /* position: relative; */
+}
+
+/* Track */
+/* ::-webkit-scrollbar-track {
+  background: #ffff;
+  background-color: transparent;
+} */
+/* Handle */
+/* ::-webkit-scrollbar-thumb {
+  background: #8889;
+} */
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #5559;
+} */
+
+/* Body 
+------------------------------------- */
+body {
+  background: #ffffff;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  position: relative;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 100%;
+}
+
+/* Body end ------------------------- */
+
+/* Typography
+------------------------------------- */
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  text-transform: none;
+}
+
+
+h1 {
+  color: #000;
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+#about.izlozbe h1 {
+  margin-top: 0px;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+h3 {
+  color: #444;
+  font-size: 22px;
+  letter-spacing: 4px;
+}
+
+.header-thumb h1 {
+  font-family: 'Playfair Display', serif;
+  color: #555;
+  font-size: 4.8rem;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.header-thumb h3 {
+  color: #444;
+  font-size: 22px;
+  letter-spacing: 4px;
+}
+
+h5 {
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+p {
+  color: #777;
+  font-size: 16px;
+  line-height: 28px;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+a {
+  font-weight: 300 !important;
+  outline: none;
+  text-decoration: none;
+}
+
+a,
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+  outline: 0;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+.navbar-default .navbar-brand {
+  font-family: 'Playfair Display', serif;
+  color: #aaa;
+  font-size: 22px;
+  font-weight: 400;
+  opacity: 1;
+  text-decoration: none;
+  /* text-transform: uppercase; */
+  letter-spacing: 0.2rem;
+}
+
+/* Typography end --------------------- */
+
+/* Navbar 
+--------------------------------------- */
+
+.navbar-nav {
+  display: block;
+  float: none;
+}
+
+.navbar-default {
+  background-color: #000;
+  /* background-image: linear-gradient(to bottom,#333 0, #000 20%, #000 80%,#333 100%); */
+  background-image: linear-gradient(to bottom, #000 0, #000 20%, #000 80%, #000 100%);
+  border-color: #000;
+}
+
+.navbar-brand {
+  float: left;
+  padding: 15px 0px 0 15px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+}
+
+/* Navbar end --------------------- */
+
+/* contact section styles
+/* ========================================== */
+
+.kontakt {
+  padding-top: 2rem !important;
+}
+
+#contact {
+  padding-top: 0rem;
+  padding-bottom: 4rem;
+}
+
+#contact .fa {
+  font-size: 36px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#contact .fa.fa-xs {
+  font-size: 26px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#contact #map-canvas {
+  border: none;
+  width: 100%;
+  height: 300px;
+  margin-top: 40px;
+}
+
+#contact .contact-form {
+  padding-top: 14px;
+}
+
+#contact .form-control {
+  background: transparent;
+  border: 1px solid #eee;
+  border-radius: 0px;
+  box-shadow: none;
+  font-size: 16px;
+  margin-bottom: 16px;
+  transition: all 0.4s ease-in-out;
+}
+
+#contact .form-control:hover {
+  border-color: #f0f0f0;
+}
+
+#contact textarea {
+  min-height: 150px;
+}
+
+#contact input {
+  height: 50px;
+}
+
+#contact input[type='submit'] {
+  background: #111112;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  transition: all 0.4s ease-in-out;
+  margin-top: 10px;
+}
+
+#contact input[type='submit']:hover {
+  background: #444;
+}
+
+.contact-submit {
+  width: 50%;
+}
+
+#contact .col-md-4 {
+  background: #fff;
+  padding: 62px 0px 32px 42px;
+  position: relative;
+  bottom: -50px;
+}
+
+
+#blog.pred-galerija {
+  padding-top: 2rem;
+  padding-bottom: 0rem;
+}
+
+
+
+/* footer section styles
+/* ========================================== */
+footer {
+  background: #141414;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  text-align: center;
+}
+
+
+/* social icon */
+.social-icon {
+  padding: 0;
+  margin: 0;
+}
+
+.social-icon li {
+  list-style: none;
+  display: inline-block;
+}
+
+.social-icon li a {
+  border-radius: 100px;
+  border: 1px solid transparent;
+  color: #909090;
+  font-size: 18px;
+  width: 50px;
+  height: 50px;
+  line-height: 48px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  padding: 0px;
+  margin-top: 14px;
+  margin-right: 8px;
+  margin-left: 8px;
+  position: relative;
+  top: 0px;
+}
+
+.social-icon li a:hover {
+  background: #ffffff;
+}
