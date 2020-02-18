@@ -1,12 +1,12 @@
 // let y = prompt('Unesi broj bacanja');
 let y = document.getElementById("num").value;
 // Process form if use enter key. put script in head.    
-// document.onkeyup = enter;    
-// function enter(e) {if (e.which == 13) {
-//     // submitForm();
-//     y = document.getElementById("num").value;
-//     }
-// }
+document.onkeyup = enter;    
+function enter(e) {if (e.which == 13) {
+    // submitForm();
+    y = document.getElementById("num").value;
+    }
+}
 // uses keyup not down as better practice imo    
 // submitForm() is user function that posts the form
 
