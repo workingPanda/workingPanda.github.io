@@ -3,7 +3,7 @@ let y = document.getElementById("num").value;
 // Process form if use enter key. put script in head.    
 document.onkeyup = enter;    
 function enter(e) {if (e.which == 13) {
-    // submitForm();
+    submitForm();
     y = document.getElementById("num").value;
     }
 }
